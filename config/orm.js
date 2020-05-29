@@ -63,7 +63,7 @@ const orm = {
     return result;
   },
   deleteOne: async (table, condition)=>{
-      let queryString = `DELETE ${table} SET WHERE ${condition}`;
+      let queryString = `DELETE FROM ${table} WHERE ${condition}`;
       console.log(queryString);
 
       const result = await connection.query(queryString);

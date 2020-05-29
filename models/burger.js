@@ -6,17 +6,18 @@ const burger = {
 
         return result;
     },
-    insertOne: async () => {
+    insertOne: async (cols,vals) => {
         const result = await orm.insertOne("burgers", cols, vals);
 
         return result;
     },
-    updateOne: async () => {
+    updateOne: async (objColVals, condition) => {
+        console.log(objColVals, condition)
         const result = await orm.updateOne("burgers", objColVals, condition);
-
+        
         return result;
     },
-    deleteOne: async () => {
+    deleteOne: async (condition) => {
         const result = await orm.deleteOne("burgers", condition);
 
         return result;

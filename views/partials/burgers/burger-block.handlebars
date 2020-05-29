@@ -2,7 +2,9 @@
     Order # {{id}}
 	{{burger_name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdevour="{{devoured}}">
+	<button class="change-devour btn btn-success" data-id="{{id}}" data-newdevour="{{devoured}}">
 		{{#if devoured}}Devour it!{{else}}Eat Mo burger!{{/if}}
 	</button>
+
+	<button class="delete-burger btn btn-danger" data-id="{{this.id}}">No More</button>
 </p>

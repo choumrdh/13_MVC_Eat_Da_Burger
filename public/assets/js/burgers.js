@@ -1,12 +1,13 @@
-$(function() {
+$( document ).ready(function() {
+ $(function() {
     $(".change-devour").on("click", function(event) {
       var id = $(this).data("id");
       var newdevour = $(this).data("newdevour");
-  
+      console.log(newdevour)
       var newDevourState = {
-        devour: "true"
+        devoured: newdevour ? 1 : 0
       };
-  
+      
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
@@ -38,4 +39,20 @@ $(function() {
         }
       );
     });
+
+
+  $(".delete-burger").on("click", function (event) {
+    var id = $(this).data("id");
+
+    // Send the DELETE request.
+    $.ajax("/api/burgers/" + id, {
+      type: "DELETE"
+    }).then(
+      function () {
+        console.log("deleted burger", id);
+        location.reload();
+      }
+    );
   });
+  });
+});

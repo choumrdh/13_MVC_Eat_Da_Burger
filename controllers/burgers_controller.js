@@ -8,7 +8,7 @@ router.get("/", async (req, res)=>{
     res.render("index", {burgers: data})
 });
 
-router. get("/api/burger", async(req, res)=>{
+router.get("/api/burger", async(req, res)=>{
     const data = await burger.selectAll();
     res.json(data);
 });

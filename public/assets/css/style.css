@@ -1,10 +1,12 @@
 
+body{
+    background-image: url("https://cdn1.vectorstock.com/i/1000x1000/19/00/seamless-pattern-of-fast-food-cartoon-burger-vector-10011900.jpg");
+}
 .jumbotron{
     background-color: lightyellow;
+    font-family: monospace;
 };
-body{
-    background-color: lightskyblue;
-}
+
 
  
 

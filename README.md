@@ -14,7 +14,9 @@
     - [GitHub](#author-bust_in_silhouette)
     - [Email](#author-bust_in_silhouette)
   - [License](#license-trophy)
-  
+  ### Heroku Link
+  [![Click ME](./public/assets/img/ScreenShot.png)](https://mvc-13-eat-da-burger.herokuapp.com)
+
   ### User Story :speech_balloon:
   ```
    Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.

@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const util = require("util");
-
+const isprod = process.env.NODE_ENV === "production"
 const connection;
 
 if (process.env.JAWSDB_URL) {

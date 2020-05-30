@@ -12,7 +12,7 @@
   - [Author](#author-bust_in_silhouette)
     - [Name](#author-bust_in_silhouette)
     - [GitHub](#author-bust_in_silhouette)
-    - [Email](#author-bust_in_silhouette)
+    - [Heroku](#author-bust_in_silhouette)
   - [License](#license-trophy)
   ### Heroku Link
   [![Click ME](./public/assets/img/ScreenShot.png)](https://mvc-13-eat-da-burger.herokuapp.com)
